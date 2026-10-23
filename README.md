@@ -2,105 +2,105 @@
 
 
 
-\## Project Overview
+\## Overview
+
+A Python-based banking analytics project that demonstrates transaction analysis, unusual withdrawal detection, account-level anomaly detection, and basic machine learning using fictional banking data.
 
 
 
-This is a beginner Data Science portfolio project that demonstrates Python-based banking transaction analysis using fictional data.
+\## Features
+
+\- \*\*Transaction Analysis:\*\* Summarizes deposits, withdrawals, and net movement.
+
+\- \*\*Banking Dashboard:\*\* Displays transaction summaries and visualizations using Streamlit.
+
+\- \*\*Unusual Withdrawal Detection:\*\* Flags withdrawals that meet a configurable amount threshold.
+
+\- \*\*Account Anomaly Detection:\*\* Compares withdrawals against an account's previous transaction history.
+
+\- \*\*Machine Learning:\*\* Demonstrates a Decision Tree classifier using an educational synthetic dataset.
+
+\- \*\*Interactive Prediction App:\*\* Allows users to enter transaction details and view a sample model prediction.
 
 
 
-The project explores data analysis, transaction monitoring, anomaly detection, Machine Learning classification, and interactive dashboards.
-
-
-
-\## Technologies Used
-
-
+\## Technologies
 
 \- Python
 
 \- Pandas
 
-\- Scikit-learn
-
 \- Matplotlib
+
+\- Scikit-learn
 
 \- Streamlit
 
 
 
-\## Project Features
-
-
-
-\- Transaction summaries and reporting
-
-\- Identification of large transactions for review
-
-\- Account-level withdrawal anomaly detection
-
-\- Decision Tree classification
-
-\- Model evaluation using accuracy, precision, recall, and confusion matrix
-
-\- Interactive Streamlit dashboards
-
-
-
 \## Project Structure
 
+```text
 
+banking-data-science/
 
-\- `src/` — Python scripts and applications
+├── reports/
 
-\- `reports/` — Generated analysis reports
+├── src/
 
+│   ├── account\_anomaly.py
 
+│   ├── bank\_analysis.py
 
-\## How to Run
+│   ├── bank\_dashboard.py
 
+│   ├── transaction\_ml.py
 
+│   ├── transaction\_ml\_app.py
 
-Install the required packages:
+│   └── unusual\_transactions.py
 
+├── .gitignore
 
+├── README.md
 
-```bash
-
-python -m pip install -r requirements.txt
-
-```
-
-
-
-Run the transaction analysis:
-
-
-
-```bash
-
-python src/bank\_analysis.py
+└── requirements.txt
 
 ```
 
 
 
-Run the transaction monitoring program:
+\## Installation
+
+Install Python, then install the required libraries:
 
 
 
 ```bash
 
-python src/unusual\_transactions.py
+pip install -r requirements.txt
 
 ```
 
 
 
-Run the Machine Learning application:
+\## Running the Applications
+
+Run these commands from the project root directory.
 
 
+
+Banking dashboard:
+
+```bash
+
+python -m streamlit run src/bank\_dashboard.py
+
+```
+
+
+
+Machine learning prediction app:
 
 ```bash
 
@@ -110,15 +110,59 @@ python -m streamlit run src/transaction\_ml\_app.py
 
 
 
-\## Important Disclaimer
+Run transaction analysis:
+
+```bash
+
+python src/bank\_analysis.py
+
+```
 
 
 
-This is an educational project using fictional banking transactions and artificial training labels.
+Run unusual withdrawal detection:
+
+```bash
+
+python src/unusual\_transactions.py
+
+```
 
 
 
-The rules and Machine Learning model are demonstrations only. They are not validated for real-world fraud detection and must not be used to make actual banking decisions.
+Run account anomaly detection:
+
+```bash
+
+python src/account\_anomaly.py
+
+```
+
+
+
+Run the machine learning example:
+
+```bash
+
+python src/transaction\_ml.py
+
+```
+
+
+
+\## Important Note
+
+This project uses fictional data for educational purposes. The machine-learning model is a demonstration, not a validated fraud-detection system, and must not be used to make real banking decisions.
+
+
+
+\## Author
+
+Dorcas Kivuyo
+
+
+
+Computer Science Graduate | Banking ICT | Data Science and Machine Learning
 
 
 
